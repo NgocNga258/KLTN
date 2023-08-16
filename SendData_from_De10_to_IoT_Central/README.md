@@ -1,14 +1,14 @@
 - File code để đưa dữ liệu đọc được từ cảm biến và led lên Azure IoT Central sẽ nằm trong đường dẫn: azure-iot-sdk-c\samples\dockerbuilds\myapp\iothub_cross_compile_simple_sample.c
 - Sử dụng phần mềm Ubuntu22-04.
 - Đầu tiên, Set up a Linux development environment:
-	#For Ubuntu, you can use apt-get to install the right packages: 
+	# For Ubuntu, you can use apt-get to install the right packages: 
 		sudo apt-get update
 		sudo apt-get install -y git cmake build-essential curl libcurl4-openssl-dev libssl-dev uuid-dev ca-certificates
-	#Verify that CMake is at least version 2.8.12:
+	#V erify that CMake is at least version 2.8.12:
 		cmake --version
-	#Verify that gcc is at least version 4.4.7:
+	# Verify that gcc is at least version 4.4.7:
 		gcc --version
-	#Clone the latest release of SDK to your local machine using the tag name you found:
+	# Clone the latest release of SDK to your local machine using the tag name you found:
 		git clone -b lts_01_2023 https://github.com/Azure/azure-iot-sdk-c.git
 		cd azure-iot-sdk-c
 		git submodule update --init
